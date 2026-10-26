@@ -1,0 +1,32 @@
+---
+import Map from "../components/map.jsx";
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CT Access Transit</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+  </head>
+  <body style="margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc;">
+    <main style="max-width: 1200px; margin: 0 auto; padding: 24px 16px;">
+      
+      <!-- Page Header -->
+      <header style="margin-bottom: 24px;">
+        <h1 style="margin: 0; font-size: 28px; font-weight: 800; color: #0f172a;">
+          CT Access Transit
+        </h1>
+        <p style="margin: 4px 0 0 0; color: #64748b; font-size: 15px;">
+          Real-time transit accessibility monitoring across New Haven, West Haven, & Meriden.
+        </p>
+      </header>
+
+      <!-- App Container (No overflow clipping, lets Map.jsx manage layout) -->
+      <div style="width: 100%; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); border: 1px solid #e2e8f0; background: white;">
+        <Map client:only="react" />
+      </div>
+
+    </main>
+  </body>
+</html>
