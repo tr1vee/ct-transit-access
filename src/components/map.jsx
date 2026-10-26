@@ -4,7 +4,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import stopsData from "../data/stops.json";
  const key = "key";
 
-mapboxgl.accessToken = key
+key;
 
 // route mapper
 const getFriendlyRouteName = (agencyPrefix, stopId, routeId = "") => {
