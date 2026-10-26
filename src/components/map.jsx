@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import stopsData from "../data/stops.json";
+ const key = "key";
 
-
-mapboxgl.accessToken = import.meta.env.PUBLIC_MAPKEY|| "pk.eyJ1IjoidHIxdmVlIiwiYSI6ImNtdmVpenh0ZTA3amIyd3BxNDBrZ2JtZTEifQ.1dKchMgzTtMmWXkXfomsHA";
+mapboxgl.accessToken = key
 
 // route mapper
 const getFriendlyRouteName = (agencyPrefix, stopId, routeId = "") => {
